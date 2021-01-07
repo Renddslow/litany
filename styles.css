@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lora', serif;
+}
+
+article {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 500px;
+  box-sizing: border-box;
+  padding: 24px 24px 48px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+p.subtitle {
+  text-align: center;
+  font-size: 14px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.prayer p:not(.response), .paragraph-prayer p {
+  margin-top: 32px;
+}
+
+.response {
+  margin-top: 8px;
+  margin-left: 24px;
+}
+
+section {
+  margin-top: 48px;
+}
+
+.indent {
+  margin-left: 24px;
+}
+
+.cross {
+  width: 24px;
+  height: 24px;
+  margin: 48px auto 0;
+  position: relative;
+}
+
+.cross::before,
+.cross::after {
+  content: '';
+  height: 4px;
+  width: 100%;
+  display: block;
+  background: #d00;
+}
+
+.cross::after {
+  position: absolute;
+  top: 0;
+  transform: rotate(90deg);
+}
